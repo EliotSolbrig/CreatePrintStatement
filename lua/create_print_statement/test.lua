@@ -67,7 +67,7 @@ function getPrintStatement(text, fileType)
         printStatement = 'console.log(' .. text .. ')'
     elseif fileType == "sh" then
         printStatement = 'echo "' .. text .. ''
-    elseif fileType =="ino" then
+    elseif fileType =="arduino" then
         printStatement = 'Serial.println("' .. text .. ');'
     else
         print("invalid file type: ", fileType)
